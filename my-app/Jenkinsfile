@@ -10,7 +10,6 @@ pipeline {
         stage('--test--'){
             steps {
                 sh 'mvn test'
-                junit 'reports/**/*.xml' 
             }
         }
         stage('--package--') {
